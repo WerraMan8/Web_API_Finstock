@@ -85,7 +85,7 @@ namespace ProductsAPI.Controllers
                 Price = updateProductDto.Price
             };
 
-            var updatedProduct = productService.GetProductById(id);
+            var updatedProduct = productService.UpdateProduct(id, productEntity);
             
             if (updatedProduct is null)
             {
