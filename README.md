@@ -1,3 +1,7 @@
+Security note: Sensitive Azure SQL credentials have been removed from the appsettings.json to prevent exposure in source control. To run this project locally:
+1. Right click the project in visual studio and select "Manage user secrets".
+2. Paste the provided Azure SQL connection string into the secrets.json file. (Alternatively, update appsettings.json with the credentials directly if not using User Secrets).
+
 I found this Web API with CRUD functionality technical assessment extremely helpful in the context of my journey of picking up C# after learning Java in depth.
 I approached this project with a few key steps:
 
